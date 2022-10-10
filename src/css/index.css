@@ -1,0 +1,50 @@
+@import "base.css";
+@import "credit-card.css";
+@import "form.css";
+
+@media (max-width: 420px) {
+  :root {
+    font-size: 50%;
+  }
+
+  body {
+    background: #202024;
+  }
+
+  #app {
+    background: none;
+    border: none;
+  }
+
+  .cc-bg svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 780px) {
+  #app {
+    grid-template-areas:
+      "A B"
+      "C B";
+
+    width: fit-content;
+    max-width: fit-content;
+    padding-inline: 4.8rem;
+
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  #app header {
+    grid-area: A;
+  }
+
+  #app section.cc {
+    grid-area: B;
+    align-self: center;
+  }
+
+  #app form {
+    grid-area: C;
+  }
+}
