@@ -23,6 +23,6 @@ function setCardType(type) {
   ccImageLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-setCardType("maestro")
+setCardType("elo")
 
 globalThis.setCardType = setCardType

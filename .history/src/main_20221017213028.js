@@ -9,12 +9,12 @@ function setCardType(type) {
     visa: ["#ffc600", "#0846bb"],
     mastercard: ["#ec001b", "#f8a01b"],
     nubank: ["#820ad1", "#f5f5f5"],
-    elo: ["#00A4E0", "#EF4123"],
-    alelo: ["#007858", "#C7D540"],
-    american: ["#1f6cb4", "#fffef8"],
-    maestro: ["#CC2131", "#3A9BD9"],
-    bb: ["#003DA4", "#FFEF38"],
-    hipercard: ["#9a1914", "#fcfdf7"],
+    elo: ["#ffc600", "#0846bb"],
+    alelo: ["#ffc600", "#0846bb"],
+    american: ["#ffc600", "#0846bb"],
+    maestro: ["#ffc600", "#0846bb"],
+    bb: ["#ffc600", "#0846bb"],
+    hipercard: ["#ffc600", "#0846bb"],
     default: ["black", "gray"],
   }
 
@@ -23,6 +23,6 @@ function setCardType(type) {
   ccImageLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-setCardType("maestro")
+setCardType("moestro")
 
 globalThis.setCardType = setCardType

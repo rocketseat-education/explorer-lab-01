@@ -1,0 +1,18 @@
+<svg  width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+		<image  width="51" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhAQMAAAAEfUA5AAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAdSURBVHic7cGBAAAAAMOg+VNf4QBVAQAAAAAAwGsaXgABfdWP+QAAAABJRU5ErkJggg=="/>
+		<image  width="194" height="174" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAACuBAMAAACW+c8jAAAAAXNSR0IB2cksfwAAABtQTFRFAAAA/////Pr+np6e9fX1n5+foKCgoaGho6OjXr5jGwAAAAl0Uk5TAAAA////////g3/XAgAAAcZJREFUeJzt2uFRhDAQhuFzrCCEBpizAS4V5IYKLMES7MDOnRENm2wWkN3wg/nen2TguQ2MMp63G0IIIYQQQgghhBBC6NxeXLV7CGGsL221Swi/HTJ2CD4s0ePTEjuHrG0LFKBEZyZkANkoMyEEgbASfCmkfbISGJCGMBL4CGkIA6F2dTKEXkifVxhCK3jyccthRguhy7bcNxCKJ7MgDITiwZx/tloKnl4pG4rIKiFwwZsKviLkQ2iF/JmpDaEU/LYw6oRQFVwLIT/Jmwl+hxBUwl0QnJkQWgudKHgjYbnOuCIMzYVRIQRRcBDOE15XBA8BAoSrCg8IEOyEo3+bgQDhZOH9AjNcUIiyECGcJ7BbTVYUwltzoZeFZelpJURJiM2FwUqYJIF/S/MPYeVhSkK0E/JtmhoIU11wOkG+EXQyM4FuU0/Zg8JHvhnFED1VDwqfXIhccArhke/GT0N5G6K1kPapz4ZSCfk2JWIWnq6BMNGjzkToSyL+HVzuu05gQ1QeXaXAhpjYbyOlUBmifCvQCnyI8iytwIZgLzZqwW0ABkK+Tww4KnyRwytvNTVB+I+Q9eQtshJmY6gvlQJCCCGEEEIISX0Dv7tbpo9n4SAAAAAASUVORK5CYII="/>
+		<linearGradient id="paint0_linear_48_48" x1="28.1194" y1="0.620152" x2="28.1194" y2="15.9" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.75"/>
+</linearGradient>
+<linearGradient id="paint1_linear_48_48" x1="5.82494" y1="0.914158" x2="5.82494" y2="8.96871" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.75"/>
+</linearGradient>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="-31" y="-67"/>
+	<use id="Camada 1" href="#img2" x="-31" y="-51"/>
+</svg>

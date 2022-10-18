@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 16" width="28" height="16">
+	<title>cc-nubank-svg</title>
+	<defs>
+		<image  width="29" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAARCAMAAAAWj1dGAAAAAXNSR0IB2cksfwAAAOFQTFRFAAAAnp6enp6enp6enp6enp6enp6enp6enp6enp6enp6e9fX19fX19fX19fX1np6enp6enp6enp6enp6enp6e9fX19fX19fX19fX1np6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6e9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX1n5+f9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX1np6enp6eoKCg9fX19fX19fX19fX19fX1SRcq8QAAAEt0Uk5TAAUSAx+W4O3RbQhepBeNRmin9/+hkv8k20HbUQ1vNNUQdb/l/JKsNyVEu3ifFVY+9+83xwo3A7bVCawZKuXIb205BRq2Jx7q+tN6yiSh8wAAALhJREFUeJzFy8cWgjAUBNBnF40KRGMXLKhYsfeGWP//g3zkyCYc175NZuaeAHwvEAzBrwtHorG4lABIEkJSfMKQ5iEjKyrFywLkGGN5PmIo4FMs0TJUqq5LPq2pVNOx1VE1nzYoVXhtIuuCVlqUGry2UTuCdqmnxr/V9LQnah/HgduGGEaiji3GJlNsJmOzuaCL5Qr/rM3NkljbHYh/YX9AZsfT+WLjdnUcR+YqY7oB3Mnj+XrbfPoAa74hkwnKruMAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img2" href="#img1" x="-1" y="-1"/>
+</svg>
