@@ -1,7 +1,7 @@
 /* CC */
 .cc {
   background: no-repeat center/cover;
-  background-image: url("/cc-bg.svg");
+  background-image: url("img/cc-bg.svg");
   width: 36rem;
   height: 23rem;
   padding: 2rem;
