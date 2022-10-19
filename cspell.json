@@ -1,9 +1,15 @@
 {
   "version": "0.2",
   "ignorePaths": [],
-  "dictionaryDefinitions": [],
-  "dictionaries": [],
-  "words": ["Rocketpay", "rocketpay"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-dictionary",
+      "path": "./.cspell/custom-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["custom-dictionary"],
+  "words": [],
   "ignoreWords": [],
   "import": []
 }

@@ -1,0 +1,4 @@
+# Custom Dictionary Words
+mastercard
+rocketpay
+Rocketpay
