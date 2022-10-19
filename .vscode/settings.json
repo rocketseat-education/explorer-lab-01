@@ -1,7 +1,7 @@
 {
   // editor
   "editor.wordWrap": "on",
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.lineHeight": 30,
   "editor.tabSize": 2,
   "editor.bracketPairColorization.enabled": true,
@@ -26,12 +26,12 @@
   "prettier.semi": false,
 
   // terminal
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "source": "Git Bash"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "window.zoomLevel": 0
 }
