@@ -49,12 +49,12 @@ const cardNumberPattern = {
   mask: [
     {
       mask: "0000 0000 0000 0000",
-      regex: /^4\d{0, 15}/, 
+      regex:/^4\d{0,15}/, 
       cardtype: "visa",
     },
     {
       mask: "0000 0000 0000 0000",
-      regex: /(^5[1-5]\d{0, 2}|^22[2-9]\d|^2[3-7]\d{0, 2})\d{0,12}/,
+      regex:/(^5[1-5]\d{0,2}|^22[2-9]\d|^2[3-7]\d{0,2})\d{0,12}/,
       cardtype: "mastercard",
     },
     {
@@ -74,4 +74,3 @@ const cardNumberPattern = {
   },
 };
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern);
-// (^5[1-5]\d{0, 2} | ^22[2-9]\d | ^2[3-7]\d{0, 2})\d{0,12} 
