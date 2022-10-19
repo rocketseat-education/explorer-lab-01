@@ -18,12 +18,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Omni",
 
-  // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.enable": true,
-  "prettier.singleQuote": false,
-  "prettier.tabWidth": 2,
-  "prettier.semi": false,
+  // color extension bug fix
+  "color-highlight.enable": false,
 
   // terminal
   "terminal.integrated.fontSize": 16,
