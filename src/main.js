@@ -1,4 +1,5 @@
 import "./css/index.css"
+import IMask from 'imask';
 
 const ccBgColor01 = document.querySelector(
   ".cc-bg svg > g g:nth-child(1) > path"
@@ -25,3 +26,51 @@ function setCardType(type) {
 setCardType("default")
 
 globalThis.setCardType = setCardType
+
+
+// Mask cvc input
+const securityCode= document.getElementById('security-code');
+const securityCodePattern =  {
+  mask: '0000',
+}
+
+const securityCodeMask = IMask(securityCode, securityCodePattern);
+
+// Mask expiration input
+const expirationDate = document.getElementById('expiration-date');
+const expirationDatePattern =  {
+  mask: 'MM{/}YY',
+  blocks: {
+    YY: {
+      mask : IMask.MaskedRange,
+      from : String(new Date().getFullYear()).slice(2),
+      to : String(new Date().getFullYear() + 10).slice(2),
+       },
+    MM: {
+      mask: IMask.MaskedRange,
+      from: 1,
+      to: 12,
+    },
+  },
+}
+
+const expirationDateMask = IMask(expirationDate, expirationDatePattern);
+
+// Mask card number input
+const cardNumber = document.getElementById('card-number');
+const cardNumberPattern =  {
+  mask: [
+    {
+      mask: '0000 0000 0000 0000',
+      cardtype: 'visa',
+    },
+    {
+      mask: '0000 0000 0000 0000',
+      cardtype: 'mastercard',
+    },
+    {
+      mask: '0000 0000 0000 0000',
+      cardtype: 'default',
+    },
+    
+    ]}
