@@ -18,6 +18,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Omni",
 
+  // color extension bug fix
+  "color-highlight.enable": false,
+
   // terminal
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.windows": {
