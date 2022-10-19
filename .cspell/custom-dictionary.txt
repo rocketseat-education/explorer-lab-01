@@ -1,4 +1,5 @@
 # Custom Dictionary Words
+imask
 mastercard
 rocketpay
 Rocketpay

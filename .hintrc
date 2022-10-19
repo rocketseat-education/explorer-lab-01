@@ -11,6 +11,8 @@
           "font-synthesis"
         ]
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "button-type": "off"
   }
 }
