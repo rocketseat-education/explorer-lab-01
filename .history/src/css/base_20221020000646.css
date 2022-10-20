@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  font-family: Inter, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #121214;
+
+  display: flex;
+  place-items: center;
+
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+#app {
+  display: grid;
+  justify-content: center;
+  gap: 3.2rem;
+
+  width: 90%;
+  max-width: 42rem;
+  margin: 0 auto;
+
+  padding: 2.8rem 6rem 4rem;
+  background: #202024;
+  border: 0.1rem solid #323238;
+  border-radius: 0.6rem;
+}
+
+#app header {
+  display: flex;
+  align-items: center;
+}

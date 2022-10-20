@@ -1,0 +1,71 @@
+/* CC */
+.cc {
+  background: no-repeat center/cover;
+  background-image: url("/cc-bg.svg");
+  width: 36rem;
+  height: 23rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cc-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cc-info {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.cc-number {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+  letter-spacing: 0.04em;
+
+  color: #e8e8e8;
+  text-shadow: 0 0.12rem 0.32rem rgb(23 23 23 / 40%);
+}
+
+.cc-holder,
+.cc-expiration,
+.cc-security {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.cc .label {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.cc .value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0.25rem 0.25rem rgb(22 22 22 / 16%);
+  text-transform: uppercase;
+}
+
+.cc-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cc,
+.cc-logo,
+.cc-number {
+  position: relative;
+}
+
+.cc-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
