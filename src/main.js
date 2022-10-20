@@ -96,12 +96,19 @@ const cardNumberPattern = {
     const foundMask = dynamicMasked.compiledMasks.find(item => {
       return number.match(item.regex);
     });
-    console.log(foundMask._value);
-    setCardType(foundMask.cardtype);
+    //setCardType(foundMask.cardtype);
     return foundMask;
   },
 };
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern);
+
+cardNumberMasked.on('accept', () => {
+  const ccNumber = document.querySelector('.cc-number');
+  ccNumber.innerText = cardNumberMasked.value || '1234 5678 9012 3456';
+
+  const cardType = cardNumberMasked.masked.currentMask.cardtype;
+  setCardType(cardType);
+});
 
 document
   .querySelector('form')
