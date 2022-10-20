@@ -92,3 +92,19 @@ const cardNumberPattern = {
   },
 };
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern);
+
+document
+  .querySelector('form')
+  .addEventListener('submit', event => event.preventDefault());
+
+const addCardButton = document.querySelector('#add-card');
+addCardButton.addEventListener('click', event => {
+  console.log('clicou');
+});
+
+const cardHolder = document.querySelector('#card-holder');
+cardHolder.addEventListener('input', () => {
+  const ccHolder = document.querySelector('.cc-holder .value');
+  ccHolder.innerText = cardHolder.value.substr(0, 22) || 'FULANO DA SILVA';
+  console.log(cardHolder.value);
+});
