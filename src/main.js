@@ -6,7 +6,7 @@ const ccBgColor02 = document.querySelector(".cc-bg svg > g g:nth-child(2) path")
 const ccLogo = document.querySelector(".cc-logo span:nth-child(2) img")
 
 //função para mudar backgroud do cartao
-function setCard(type) {
+function setCardType(type) {
   const colors = {
     visa: ["#436d99", "#2d57f2"],
     mastercard: ["#df6f29", "#c69347"],
@@ -18,7 +18,7 @@ function setCard(type) {
   ccLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-setCard("visa")
+globalThis.setCardType = setCardType
 
 //criando mascara para input CVC
 const securityCode = document.querySelector("#security-code")
@@ -113,3 +113,26 @@ cardHolder.addEventListener("input", ()=> {
   ccHolder.innerText = cardHolder.value.length === 0 ?
    'FULANO DA SILVA' : cardHolder.value
 }) 
+
+//criando evento com imask do codigo
+securityCodeMasked.on("accept", () => {
+  updateSecuryCode(securityCodeMasked.value)
+})
+
+function updateSecuryCode(code){
+  const ccSecurity = document.querySelector(".cc-security .value")
+  ccSecurity.innerText = code.length ===  0 ? "123" : code
+}
+
+//criando evento com imask do numero do cartao
+cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype //seleciona tipo do cartao
+  setCardType(cardType)
+
+  updateCardNumber(cardNumberMasked.value)
+})
+
+function updateCardNumber(number) {
+  const ccNumber = document.querySelector(".cc-number")
+  ccNumber.innerText = number.length === 0 ? "1234 5678 9012 3456" : number
+}
