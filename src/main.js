@@ -103,3 +103,13 @@ addButton.addEventListener("click", () => {
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault()
 })
+
+
+const cardHolder = document.querySelector("#card-holder") //seleciona elemento que tem o id: card-holder
+//criando evento no input
+cardHolder.addEventListener("input", ()=> {
+  const ccHolder = document.querySelector(".cc-holder .value") //selecionado elemneto nome do titular e seu valor
+
+  ccHolder.innerText = cardHolder.value.length === 0 ?
+   'FULANO DA SILVA' : cardHolder.value
+}) 
