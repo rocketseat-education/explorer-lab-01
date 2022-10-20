@@ -28,6 +28,16 @@ const securityCodePattern = {
 };
 const securityCodeMasked = IMask(securityCode, securityCodePattern);
 
+securityCodeMasked.on('accept', () => {
+  console.log(securityCodeMasked.value);
+  updateSecurityCode(securityCodeMasked.value);
+});
+
+function updateSecurityCode(code) {
+  const ccSecurity = document.querySelector('.cc-security .value');
+  ccSecurity.innerText = code || 123;
+}
+
 const expirationDate = document.querySelector('#expiration-date');
 const expirationDatePattern = {
   mask: 'MM{/}YY',
