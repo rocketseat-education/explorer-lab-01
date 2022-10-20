@@ -28,8 +28,8 @@ const securityCodePattern = {
 const securityCodeMasked = IMask(securityCode, securityCodePattern)
 
 //criando mascara para expiração
-const experationDate = document.querySelector("#expiration-date")
-const experationDatePattern = {
+const expirationDate = document.querySelector("#expiration-date")
+const expirationDatePattern = {
   mask: "MM{/}YY",
 
   //validando mes
@@ -47,7 +47,7 @@ const experationDatePattern = {
     },
   },
 }
-const experationDateMasked = IMask(experationDate, experationDatePattern)
+const expirationDateMasked = IMask(expirationDate, expirationDatePattern)
 
 //visa
 //criando mascara para o numero de cartao visa
@@ -135,4 +135,14 @@ cardNumberMasked.on("accept", () => {
 function updateCardNumber(number) {
   const ccNumber = document.querySelector(".cc-number")
   ccNumber.innerText = number.length === 0 ? "1234 5678 9012 3456" : number
+}
+
+//criando evento com imask para data de expiração
+expirationDateMasked.on("accept", () => {
+  updateExpirationDate(expirationDateMasked.value)
+})
+
+function updateExpirationDate(date){
+  const ccExpiration = document.querySelector(".cc-extra .value")
+  ccExpiration.innerText = date.length ===  0 ? "02/32" : date
 }
