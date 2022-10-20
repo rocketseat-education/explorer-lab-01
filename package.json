@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "imask": "^6.4.3"
   }
 }
