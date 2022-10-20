@@ -10,7 +10,7 @@ function setCard(type) {
   const colors = {
     visa: ["#436d99", "#2d57f2"],
     mastercard: ["#df6f29", "#c69347"],
-    default: ["black", "gray"]
+    default: ["black", "gray"],
   }
 
   ccBgColor01.setAttribute("fill", colors[type][0])
@@ -23,7 +23,7 @@ setCard("visa")
 //criando mascara para input CVC
 const securityCode = document.querySelector("#security-code")
 const securityCodePattern = {
-  mask: "0000"
+  mask: "0000",
 }
 const securityCodeMasked = IMask(securityCode, securityCodePattern)
 
@@ -37,15 +37,15 @@ const experationDatePattern = {
     MM: {
       mask: IMask.MaskedRange,
       from: 1,
-      to: 12
+      to: 12,
     },
 
     YY: {
       mask: IMask.MaskedRange,
       from: String(new Date().getFullYear()).slice(2), // pega a data atual e os dois ultmos numeros do ano
-      to: String(new Date().getFullYear() + 10).slice(2) //pega a data atual + 10 anos
-    }
-  }
+      to: String(new Date().getFullYear() + 10).slice(2), //pega a data atual + 10 anos
+    },
+  },
 }
 const experationDateMasked = IMask(experationDate, experationDatePattern)
 
@@ -64,31 +64,42 @@ const cardNumberPatter = {
     {
       mask: "0000 0000 0000 0000",
       regex: /^4\d{0,15}/, //expressao regular
-      cardtype: "visa"
+      cardtype: "visa",
     },
 
     {
       mask: "0000 0000 0000 0000",
       regex: /(^5[1-5]\d{0,2}| ^22[2-9]\d| ^2[3-7]\d{0,2}\d{0,12})/, //expressao regular
-      cardtype: "mastercard"
+      cardtype: "mastercard",
     },
 
     {
       mask: "0000 0000 0000 0000",
-      cardtype: "default"
-    }
+      cardtype: "default",
+    },
   ],
 
   //
-  dispatch: function(appended, dynamicMasked) {
+  dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
 
-    const foundMask = dynamicMasked.compiledMasks.find(function(item) {
+    const foundMask = dynamicMasked.compiledMasks.find(function (item) {
       return number.match(item.regex)
     })
 
-    console.log(foundMask)
+    //console.log(foundMask)
     return foundMask
-  }
+  },
 }
 const cardNumberMasked = IMask(cardNumber, cardNumberPatter)
+
+//criando evento
+const addButton = document.querySelector("#buttonCard") //selecionando elemento id que é guardado na variavel addButton
+addButton.addEventListener("click", () => {
+  alert("Cartão adicionado!")
+}) //é adicionado ao elemento addButton o evento addEventListener para "escutar" se o usuario ira clicar no botao, clicando no botao é disparado uma função
+
+//para nao recarregar formulario ao executar evento
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
