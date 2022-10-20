@@ -5,6 +5,9 @@ const ccBgColor01 = document.querySelector('svg g > g:nth-child(1) path');
 const ccBgColor02 = document.querySelector('svg g > g:nth-child(2) path');
 const ccLogo = document.querySelector('.cc-logo span:nth-child(2) img');
 
+const ccHolder = document.querySelector('.cc-holder .value');
+const defaultNameHolder = 'Fulano da Silva';
+
 function setCardType(type) {
   const cards = {
     visa: ['#436D99', '#2D57F2'],
@@ -29,7 +32,6 @@ const securityCodePattern = {
 const securityCodeMasked = IMask(securityCode, securityCodePattern);
 
 securityCodeMasked.on('accept', () => {
-  console.log(securityCodeMasked.value);
   updateSecurityCode(securityCodeMasked.value);
 });
 
@@ -56,6 +58,10 @@ const expirationDatePattern = {
   },
 };
 const expirationDateMasked = IMask(expirationDate, expirationDatePattern);
+expirationDateMasked.on('accept', () => {
+  const ccExpDate = document.querySelector('.cc-expiration .value');
+  ccExpDate.innerText = expirationDateMasked.value || '02/32';
+});
 
 const cardNumber = document.querySelector('#card-number');
 const cardNumberPattern = {
@@ -117,11 +123,42 @@ document
 const addCardButton = document.querySelector('#add-card');
 addCardButton.addEventListener('click', event => {
   console.log('clicou');
+  addCard();
 });
 
 const cardHolder = document.querySelector('#card-holder');
 cardHolder.addEventListener('input', () => {
-  const ccHolder = document.querySelector('.cc-holder .value');
-  ccHolder.innerText = cardHolder.value.substr(0, 22) || 'FULANO DA SILVA';
-  console.log(cardHolder.value);
+  ccHolder.innerText = cardHolder.value.substr(0, 22) || defaultNameHolder;
 });
+
+function addCard() {
+  const completed =
+    cardNumberMasked.value &&
+    expirationDateMasked.value &&
+    securityCodeMasked.value &&
+    cardHolder.value;
+
+  if (!completed) return;
+
+  const cardData = {
+    'card holder': cardHolder.value,
+    'card number': cardNumberMasked.value,
+    'security code': securityCodeMasked.value,
+    'expiration date': expirationDateMasked.value,
+    flag: cardNumberMasked.masked.currentMask.cardtype,
+  };
+
+  console.log(cardData);
+  alert('cartão adicionado!');
+  clearCardForm();
+}
+
+function clearCardForm() {
+  cardNumberMasked.value = '';
+  securityCodeMasked.value = '';
+  expirationDateMasked.value = '';
+  cardHolder.value = '';
+  ccHolder.innerText = defaultNameHolder;
+}
+
+globalThis.clearForm = clearCardForm;
