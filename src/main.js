@@ -17,8 +17,6 @@ function setCardType(type) {
   ccLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-setCardType("default")
-
 globalThis.setCardType = setCardType
 
 const securityCode = document.querySelector("#security-code")
@@ -68,7 +66,7 @@ const cardNumberPattern = {
     const foundMask = dynamicMasked.compiledMasks.find(function (item) {
       return number.match(item.regex)
     })
-    console.log(foundMask)
+
     return foundMask
   }
 }
@@ -101,6 +99,8 @@ function updateSecurityCode(code) {
 }
 
 cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype
+  setCardType(cardType)
   updateCardNumber(cardNumberMasked.value)
 })
 function updateCardNumber(number) {
