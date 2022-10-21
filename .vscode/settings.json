@@ -29,5 +29,5 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.zoomLevel": -2
+  "window.zoomLevel": -1
 }
