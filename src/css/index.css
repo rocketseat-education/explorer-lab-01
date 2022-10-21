@@ -26,8 +26,8 @@
 @media (min-width: 780px) {
   #app {
     grid-template-areas:
-      "A B"
-      "C B";
+      'A B'
+      'C B';
 
     width: fit-content;
     max-width: fit-content;

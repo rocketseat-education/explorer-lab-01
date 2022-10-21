@@ -1,0 +1,33 @@
+dialog {
+  font-family: Inter, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+  max-width: 35rem;
+  margin: auto;
+  padding: 2.8rem 6rem 4rem;
+  background: #202024;
+  border: 0.1rem solid #323238;
+  border-radius: 0.6rem;
+
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.3);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+}
+dialog form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+dialog form button {
+  align-items: center;
+  padding: 1rem;
+  margin: 0 1.6rem;
+}
