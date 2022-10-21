@@ -59,11 +59,19 @@ const cardnumberPattern = {
          },
          {
             mask: '0000 0000 0000 0000',
-            regex: //,
             cardtype: "default",
-         }
-        
-    ]
+         },
+    ],
+    dispatch: function(Appended, dynamicMasked) {
+        const number = (dynamicMasked.value + Appended).replace(/\D/g, "")
+        const foundMask = dynamicMasked.compiledMasks.find(function(item) {
+            return number.match(item.regex)
+        })
+        console.log(foundMask)
+
+        return foundMask
+    },
 }
 
 const cardnumberMasked = IMask(cardnumber, cardnumberPattern)
+
