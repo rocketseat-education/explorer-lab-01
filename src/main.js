@@ -138,7 +138,10 @@ function addCard() {
     securityCodeMasked.value &&
     cardHolder.value;
 
-  if (!completed) return;
+  if (!completed) {
+    showMessage('Informe os dados do cartão', 'Dados Incompletos');
+    return;
+  }
 
   const cardData = {
     'card holder': cardHolder.value,
@@ -149,7 +152,8 @@ function addCard() {
   };
 
   console.log(cardData);
-  alert('cartão adicionado!');
+  //alert('cartão adicionado!');
+  showMessage('Seu cartão foi adicionado!');
   clearCardForm();
 }
 
@@ -162,3 +166,15 @@ function clearCardForm() {
 }
 
 globalThis.clearForm = clearCardForm;
+
+const modalDialog = document.querySelector('dialog');
+const modalMessage = document.querySelector('dialog form p');
+const modalTitle = document.querySelector('dialog form h3');
+function showMessage(message, title) {
+  modalTitle.innerText = title || 'Rocketpay';
+  modalMessage.innerText = message;
+
+  const modalNotVisible = !modalDialog.checkVisibility();
+  if (modalNotVisible) modalDialog.showModal();
+}
+globalThis.showMessage = showMessage;
