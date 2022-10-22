@@ -1,10 +1,12 @@
-<h1 align="center"> Explorer Lab #01 </h1>
+<h1 align="center"> RocketPay | Explorer Lab #01</h1>
 
 <p align="center">
 Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Neste projeto foi abordado manipulação da DOM através do JavaScript, mascaramento dos campos de data, cvc e do cartão, utilizando RegEx (expressões regulares) para identificar a bandeira do emissor através da numeração BIN do cartão. Também apliquei um modal para apresentar as mensagens da aplicação.
 </p>
 
 <p align="center">
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -21,7 +23,11 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
   <img alt="rocketpay" src=".github/project.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Deploy
+
+O projeto está hospedado na Vercel e pode ser acessado através do link [rocketpay-kohl.vercel.app](http://rocketpay-kohl.vercel.app/).
+
+## 🦾 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -37,7 +43,7 @@ O Rocketpay é um componente que simula o formulário de preenchimento de cartã
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout Figma criado para esse projeto através [DESSE LINK](<https://www.figma.com/file/pq7i8f2PGzkpBEqOyf1SuD/Explorer-Lab-%2301-(Copy)?node-id=0%3A1&viewer=1>).
 
 ## :memo: Licença
 
@@ -45,4 +51,5 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ♥ by [Dam450](https://github.com/dam450/)
+e pela comunidade Rocketseat :wave: [Participe da comunidade!](https://discord.gg/rocketseat)
