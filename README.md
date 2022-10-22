@@ -2,7 +2,7 @@
 
 <p align="center">
 Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
-Neste projeto foi abordado manipulação da DOM através do JavaScript, mascaramento dos campos de data, cvc e do cartão, utilizando RegEx (expressões regulares) para identificar a bandeira do emissor através da numeração BIN do cartão. Também apliquei um modal para apresentar as mensagens da aplicação.
+Neste projeto foi abordado manipulação da DOM através do JavaScript, mascaramento dos campos de data, cvc e do cartão, utilizando RegEx (expressões regulares) para identificar a bandeira do emissor através da numeração BIN do cartão. Também apliquei um modal para apresentar as mensagens da aplicação e uma animação tilt no cartão.
 </p>
 
 <p align="center">
@@ -14,13 +14,17 @@ Neste projeto foi abordado manipulação da DOM através do JavaScript, mascaram
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <a href="#memo-licença">
+    <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  </a>
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="rocketpay" src=".github/project.png" width="100%">
+  <a href="http://rocketpay-kohl.vercel.app/" target="_blank">
+    <img alt="rocketpay" src=".github/project.png" width="100%">
+  </a>
 </p>
 
 ## 🚀 Deploy
@@ -36,6 +40,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
 - [iMask](https://imask.js.org)
+- [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/index.html)
 
 ## 💻 Projeto
 
