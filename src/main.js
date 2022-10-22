@@ -1,5 +1,6 @@
 import './css/index.css';
 import IMask from 'imask';
+import VanillaTilt from 'vanilla-tilt';
 
 const ccBgColor01 = document.querySelector('svg g > g:nth-child(1) path');
 const ccBgColor02 = document.querySelector('svg g > g:nth-child(2) path');
@@ -178,3 +179,13 @@ function showMessage(message, title) {
   if (modalNotVisible) modalDialog.showModal();
 }
 globalThis.showMessage = showMessage;
+
+const tiltCard = document.querySelector('.cc');
+const tiltConfig = {
+  max: 18, // max tilt rotation (degrees)
+  speed: 600, // Speed of the enter/exit transition
+  gyroscope: true, // Boolean to enable/disable device orientation detection,
+  'full-page-listening': false,
+};
+
+VanillaTilt.init(tiltCard, tiltConfig);

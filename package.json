@@ -12,6 +12,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "imask": "^6.4.3"
+    "imask": "^6.4.3",
+    "vanilla-tilt": "^1.7.2"
   }
 }
