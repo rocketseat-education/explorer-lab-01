@@ -18,6 +18,15 @@ function setCardType(type) {
 
 globalThis.setCardType = setCardType
 
+const cardHolderInput = document.querySelector("#card-holder")
+
+cardHolderInput.addEventListener("keypress", function (e) {
+  const keyCode = e.keyCode ? e.keyCode : e.wich
+  if (keyCode > 47 && keyCode < 58) {
+    e.preventDefault()
+  }
+})
+
 const securityCode = document.querySelector("#security-code")
 const securityCodePattern = {
   mask: "0000"
