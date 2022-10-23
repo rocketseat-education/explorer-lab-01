@@ -1,4 +1,4 @@
-import "./src/css/index.css"
+import "./index.css"
 import Imask from "imask"
 
 const ccBgColor01 = document.querySelector(".cc-bg svg > g g:nth-child(1) path")
