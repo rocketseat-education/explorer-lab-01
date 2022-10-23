@@ -1,4 +1,4 @@
-<h1 align="center"> Explorer Lab #01 </h1> para com isso
+<h1 align="center"> Explorer Lab #01 </h1>
 
 <p align="center">
 Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
