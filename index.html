@@ -105,7 +105,7 @@
           <span><img src="/cc-icon.svg" alt="ícone padrão de cartão" /></span>
           <span
             ><img
-              src="/cc-visa.svg"
+              src="/cc-default.svg"
               alt="ícone do cartão de crédito selecionado"
           /></span>
         </div>
@@ -135,27 +135,27 @@
       <form action="">
         <div class="input-wrapper">
           <label for="card-number">Número do cartão</label>
-          <input id="card-number" />
+          <input id="card-number" required/>
         </div>
 
         <div class="input-wrapper">
           <label for="card-holder">Nome do titular</label>
-          <input id="card-holder" />
+          <input id="card-holder" required/>
         </div>
 
         <div class="flex">
           <div class="input-wrapper">
             <label for="expiration-date">Expiração</label>
-            <input id="expiration-date" />
+            <input id="expiration-date" required/>
           </div>
 
           <div class="input-wrapper">
             <label for="security-code">CVC</label>
-            <input id="security-code" />
+            <input id="security-code" required/>
           </div>
         </div>
 
-        <button>ADICIONAR CARTÃO</button>
+        <button id="add-card">ADICIONAR CARTÃO</button>
       </form>
     </div>
 
