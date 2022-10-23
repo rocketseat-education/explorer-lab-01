@@ -1,10 +1,11 @@
 /* CC */
 .cc {
   background: no-repeat center/cover;
-  background-image: url("/cc-bg.svg");
   width: 36rem;
   height: 23rem;
   padding: 2rem;
+  background-color: #53555e;
+  border-radius: 18px;
 
   display: flex;
   flex-direction: column;
