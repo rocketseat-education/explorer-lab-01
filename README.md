@@ -45,4 +45,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Helena Lima :wave: [Veja o projeto!](https://discord.gg/rocketseat)
+Feito com ♥ by Helena Lima :wave: [Veja o projeto!](https://helenapl145.github.io/explorer-lab-01/)
