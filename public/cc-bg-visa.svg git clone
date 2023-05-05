@@ -1,3 +1,4 @@
++npm install
 <svg width="360" height="230" viewBox="0 0 360 230" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_3_2547" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="230">
 <rect width="360" height="230" rx="15.4011" fill="#16084C"/>
