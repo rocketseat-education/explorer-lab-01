@@ -28,10 +28,10 @@
   // terminal
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash"
+    Git clone: {
+      "source": git clone
     }
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0 
 }
